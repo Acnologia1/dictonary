@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai toan tu dien</title>
+</head>
+
+<body>
+<input tyle ="text" value ="" id ="nhap" />
+<label>
+    <input type="submit" name="chuyendoi" id="tim" value="Chuyển đổi" onclick="tracuu();" />
+</label>
+<input tyle ="text" value ="" id = "in"/>
+
+<script>
+    function tracuu(){
+        var tiengviet =["xinchao","tambiet","nam","thang","ngay"];
+        var hien ="";
+        var tienganh =["hello","bye","years","month","date"];
+        var tra = document.getElementById('nhap').value;
+        for(var i = 0; i< tiengviet.length;i++)
+            if (tra === tiengviet[i]) {
+                hien = tienganh[i];
+            }
+        document.getElementById('in').value = hien;
+    }
+
+</script>
+</body>
+</html>
